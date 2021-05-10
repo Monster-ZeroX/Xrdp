@@ -1,36 +1,47 @@
-#install karanawadha esiima
-echo "After this operation, RDP Installed on your server."
+#Hora Pusa XRDP script
+#V 1.0 
+#Powerd By Ehi Podda
+echo "After this operation, RDP installed on your server."
 read -p "Do you want to continue? [y/n]" CONT
 if [[ ! $CONT =~ ^[Yy]$ ]]; then
   echo "Abort.";
   exit 100
 fi
 
-#update kiriima
-sudo apt-get update -y
+if [[ $EUID -ne 0 ]]; then
+   echo -e "\e[95mYou must be root to do this.\e[0m" 1>&2
+   exit 100
+fi
 
-#xrdp install kiriima
+apt-get update
+apt-get upgrade -y
+
 sudo apt-get install xrdp -y
 
-#awashya anith ewwaa install kiriima
-sudo apt-get install mate-core mate-desktop-environment mate-notification-daemon
+pubip="$(dig +short myip.opendns.com
 
-sudo sed -i.bak '/fi/a 
+sudo apt-get install mate-core mate-desktop-environment mate-notification-daemon -y
 
-#users add kiriima
-sudo adduser xrdp ssl-cert
+sudo sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
 
-#firewall acces dhiima
-sudo ufw allow 3389/tcp
+sudo adduser xrdp ssl-cert 
 
-#xrdp restart kiriima
 sudo /etc/init.d/xrdp restart
 
-#install welaa iwarai
+useradd -p horapusa horapusa
 
-#affter install message
-echo "======Xrdp Installed succesfull ======="
-echo "RDP IP 	: ${pubip}"
-echo "Please Add A User account Before connect and add it to sudo group"
-echo "=================================="
-
+echo ""
+echo "==================================="
+echo "==========RDP Information=========="
+echo "===================================" 
+echo "IP address = ${pubip}"
+echo "Username = horapusa"
+echo "Password = horapusa"
+echo "==================================="
+echo "==================================="
+echo ""
+echo "script written by Hora Pusa"
+echo "Speacial Thanks To Ehi Podda all admins"
+echo ""
+echo "==================================="
+echo "==================================="
