@@ -1,5 +1,5 @@
 # Xrdp Install Script
-Auto xrdp installer
+Semi Auto xrdp installer
 Created By Horapusa
 
 ## AVAILABLE ON :
