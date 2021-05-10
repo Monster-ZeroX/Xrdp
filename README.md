@@ -3,15 +3,9 @@ Auto xrdp installer
 Created By Horapusa
 
 ## How To Install
-* `apt-get update -y`
-* `apt-get upgrade -y`
-* `pkg install python -y`
-* `pkg install python2 -y`
-* `pkg install git -y`
-* `pip install lolcat`
-* `git clone https://github.com/noob-hackers/grabcam`
-* `cd $HOME`
+* `sudo su`
+* `git clone https://github.com/bhathiya2005/Xrdp`
+* `cd Xrdp`
 * `ls`
-* `cd grabcam`
-* `ls`
-* `bash grabcam.sh`
+* `chmod +x *`
+* `bash xrdp.sh`
