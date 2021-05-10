@@ -17,7 +17,7 @@ Created By Horapusa
 * `bash xrdp.sh`
 * Unlock Port 3389 In your Vps Firewall.
 
-##How To Connet
+## How To Connet
 #### Windows
 Use Your Windows remote desktop software.
 #### Android 
