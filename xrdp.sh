@@ -18,7 +18,7 @@ apt-get upgrade -y
 
 sudo apt-get install xrdp -y
 
-pubip="$(dig +short myip.opendns.com
+pubip="$(dig +short myip.opendns.com @resolver1.opendns.com)"
 
 sudo apt-get install mate-core mate-desktop-environment mate-notification-daemon -y
 
