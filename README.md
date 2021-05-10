@@ -1,6 +1,8 @@
 # Xrdp Install Script
 Auto xrdp installer
 Created By Horapusa
+
+## How To Install
 * `apt-get update -y`
 * `apt-get upgrade -y`
 * `pkg install python -y`
