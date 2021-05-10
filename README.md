@@ -4,9 +4,9 @@ Created By Horapusa
 
 ## AVAILABLE ON :
 
-* Termux
+* Ubuntu
 ### TESTED ON :
-* Termux
+* Ubuntu 18.04
 
 ## How To Install
 * `sudo su`
