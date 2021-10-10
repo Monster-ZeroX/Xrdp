@@ -28,15 +28,15 @@ sudo adduser xrdp ssl-cert
 
 sudo /etc/init.d/xrdp restart
 
-useradd -p horapusa horapusa
+useradd -p monsterzerox Kaveesha@2005
 
 echo ""
 echo "==================================="
 echo "==========RDP Information=========="
 echo "===================================" 
 echo "IP address = ${pubip}"
-echo "Username = horapusa"
-echo "Password = horapusa"
+echo "Username = monsterzerox"
+echo "Password = Kaveesha@2005"
 echo "==================================="
 echo "==================================="
 echo ""
